@@ -1,1 +1,159 @@
-<div class="divTable"><div class="thead"><div class="row"><div class="header">Book Name</div><div class="header">Sanskar</div><div class="header">Aditya</div><div class="header">Diggaj</div><div class="header">Sankalp</div><div class="header">Prajwal</div><div class="header">Maximum</div></div></div><div class="tbody"><div class="row"><div class="header">Total</div><div class="cell">54.1</div><div class="cell">40.4</div><div class="cell">32.5</div><div class="cell">40.9</div><div class="cell">31.85</div><div class="cell">221.95</div></div><div class="row"><div class="header">CEN-PHY-EC</div><div class="cell">27.45</div><div class="cell">11.75</div><div class="cell">17.85</div><div class="cell">22.25</div><div class="cell">31.85</div><div class="cell">51.3</div></div><div class="row"><div class="header">CEN-PHY-WT</div><div class="cell">15.65</div><div class="cell">28.65</div><div class="cell">14.65</div><div class="cell">18.65</div><div class="cell">0</div><div class="cell">33.65</div></div><div class="row"><div class="header">CET-PYQ</div><div class="cell">4</div><div class="cell">0</div><div class="cell">0</div><div class="cell">0</div><div class="cell">0</div><div class="cell">28</div></div><div class="row"><div class="header">JEEM-PYQ</div><div class="cell">0</div><div class="cell">0</div><div class="cell">0</div><div class="cell">0</div><div class="cell">0</div><div class="cell">33</div></div><div class="row"><div class="header">RD-11</div><div class="cell">7</div><div class="cell">0</div><div class="cell">0</div><div class="cell">0</div><div class="cell">0</div><div class="cell">45</div></div><div class="row"><div class="header">RD-12</div><div class="cell">0</div><div class="cell">0</div><div class="cell">0</div><div class="cell">0</div><div class="cell">0</div><div class="cell">31</div></div></div></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Progress</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        padding: 32px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #000;
+        color: #fff;
+    }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    h1 {
+        margin: 0 0 24px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .table-wrap {
+        overflow-x: auto;
+        border: 1px solid #333;
+        border-radius: 10px;
+    }
+    table {
+        width: 100%;
+        min-width: 850px;
+        border-collapse: collapse;
+        background: #000;
+    }
+    th, td {
+        padding: 15px 14px;
+        border-bottom: 1px solid #333;
+        text-align: center;
+        white-space: nowrap;
+    }
+    th {
+        background: #111;
+        font-weight: 700;
+    }
+    th:first-child, td:first-child {
+        text-align: left;
+        font-weight: 600;
+        position: sticky;
+        left: 0;
+        background: #000;
+    }
+    th:first-child {
+        background: #111;
+    }
+    .total-row td {
+        font-weight: 700;
+        border-bottom: 2px solid #fff;
+    }
+    .maximum {
+        font-weight: 700;
+    }
+    tr:last-child td {
+        border-bottom: none;
+    }
+    @media (max-width: 700px) {
+        body { padding: 20px 10px; }
+        h1 { font-size: 22px; }
+        th, td { padding: 12px 10px; }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Study Progress</h1>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Sanskar</th>
+                    <th>Aditya</th>
+                    <th>Diggaj</th>
+                    <th>Sankalp</th>
+                    <th>Prajwal</th>
+                    <th>Maximum</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="total-row">
+                    <td>Total</td>
+                    <td>54.1</td>
+                    <td>40.4</td>
+                    <td>32.5</td>
+                    <td>40.9</td>
+                    <td>31.85</td>
+                    <td class="maximum">221.95</td>
+                </tr>
+                <tr>
+                    <td>CEN-PHY-EC</td>
+                    <td>27.45</td>
+                    <td>11.75</td>
+                    <td>17.85</td>
+                    <td>22.25</td>
+                    <td>31.85</td>
+                    <td class="maximum">51.3</td>
+                </tr>
+                <tr>
+                    <td>CEN-PHY-WT</td>
+                    <td>15.65</td>
+                    <td>28.65</td>
+                    <td>14.65</td>
+                    <td>18.65</td>
+                    <td>0</td>
+                    <td class="maximum">33.65</td>
+                </tr>
+                <tr>
+                    <td>CET-PYQ</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="maximum">28</td>
+                </tr>
+                <tr>
+                    <td>JEEM-PYQ</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="maximum">33</td>
+                </tr>
+                <tr>
+                    <td>RD-11</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="maximum">45</td>
+                </tr>
+                <tr>
+                    <td>RD-12</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="maximum">31</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
